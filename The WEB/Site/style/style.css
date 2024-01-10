@@ -1,0 +1,141 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.menu {
+	min-width: 500px;
+	width: 100%;
+	height: 70px;
+	position: fixed;
+	background-color: #343a40;
+	padding-block: 5px;
+	padding-top: 1px;
+	
+}
+
+.menu a img{
+	width: 110px;
+	height: 50px;
+	margin-top: 10px;
+	margin-right: 340px;
+	margin-left: 10px;
+}
+
+.menu ul {
+	float: left;
+	left: 50%;
+	position: relative;
+	padding-top: 15px;
+	padding-left: 35%;
+	margin-left: -90px;
+}
+
+.menu ul li {
+	margin-left: 20px;
+	float: left;
+	list-style-type: none;
+	position: relative;
+	left: -50%;
+}
+
+.menu ul li a {
+	text-align: center;
+	padding-top: 10px;
+	display: inline-block;
+	background-color: #343a40;
+	height: 30px;
+	width: 100px;
+	color: white;
+	text-decoration: none;
+	border-radius: 6px;
+}
+
+.menu ul li a:hover {
+	color: white;
+	background-color: gray;
+}
+
+.contenuprincipal {
+	padding-top: 120px;
+	margin: auto;
+}
+
+.footer {
+	bottom: 0;
+	width: 100%;
+	background-color: #343a40;
+	padding: 40px;
+}
+	
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+   
+.foundation-logo img {
+	max-width: 100%;
+	height: auto;
+}
+	
+.copyright {
+	margin-top: 20px;
+	text-align: center;
+}
+	
+.copyright span {
+	font-size: 14px;
+	color: #777;
+}
+  
+.social {
+	margin-top: 10px;
+	width: 30px;
+	height: 30px;
+	object-fit: cover;
+}
+  
+.found {
+	width: 200px;
+	height: 90px;
+	object-fit: cover;
+}
+ 
+.connexion {
+	height: 100vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    width: 500px;
+    background-color:rgba(0, 0, 0, 0.4);
+    padding: 60px;
+    box-sizing: border-box;
+    border-radius: 20px;
+}
+  
+input {
+    position: center;
+    display: block;
+    margin: 10px auto;
+    width: 300px;
+    padding: 6px 10px;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+    border-radius: 6px;
+}
+
+input[type="submit"] {
+    background-color: black; 
+    color: white; 
+    padding: 10px 20px; 
+}
+
+input[type="submit"]:hover {
+    background-color: #343a40
+}
+  
