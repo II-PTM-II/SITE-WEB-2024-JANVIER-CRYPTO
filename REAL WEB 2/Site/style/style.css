@@ -1,65 +1,92 @@
-* {
-	margin: 0;
-	padding: 0;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
-/*----barre d'haut-----*/
-
-.menu {
-	min-width: 500px;
-	width: 100vw;
-	height: 70px;
-	position: fixed;
-	background-color: #343a40;
-	padding-block: 5px;
-	padding-top: 1px;
-	z-index: 10;
+body {
+    background-color: black;
+	color: white;
 }
 
-.menu a img{
+/*--------barre d'en haut----------*/
+
+.navigation {
 	width: 110px;
 	height: 50px;
 	margin-top: 10px;
 	margin-right: 340px;
 	margin-left: 10px;
+    display: flex;
+    flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+    width: auto;
+	position: fixed;
+    z-index: 99;
+	justify-content: right;
 }
 
-.menu ul {
-	left: 50%;
-	float: right;
-	padding-top: 15px;
-	padding-left: 35%;
-	margin-left: -90px;
-}
-
-.menu ul li {
+.logo {
+    width: 110px;
+	height: 50px;
+	margin-top: 10px;
+	margin-right: 340px;
 	margin-left: 20px;
-	float: left;
-	list-style-type: none;
-	position: relative;
-	left: -50%;
 }
 
-.menu ul li a {
-	text-align: center;
-	padding-top: 10px;
-	display: inline-block;
-	background-color: #343a40;
-	height: 30px;
-	width: 100px;
-	color: white;
-	text-decoration: none;
-	border-radius: 6px;
+.navigation ul {
+    margin-top: 10px;
+	float: right;
 }
 
-.menu ul li a:hover {
-	color: white;
-	background-color: gray;
+.navigation a {
+    position: relative;
+    font-size: 1.1em;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
 }
 
-.contenuprincipal {
-	padding-top: 120px;
-	margin: auto;
+.navigation a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: white;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+
+.navigation a:hover::after{
+    transform-origin: left;
+    transform: scalex(1);
+} 
+
+.btnLogin-popup {
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #fff;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: #fff;
+    font-weight: 500;
+    margin-left: 40px;
+    transition: .5s;
+}
+
+.navigation .btnLogin-popup:hover {
+    background: #fff;
+    color: #162938;
 }
 
 /*----barre bas-----*/
@@ -117,8 +144,13 @@
 .acc .cont .gauche .h1{
 	font-size: 8em;
 	color: white;
-	text-shadow: 0px 0px 10px #CD106E;;
+	text-shadow: 0px 0px 10px #CD106E;
 
+}
+
+.acc .cont .gauche .p{
+	color: #888;
+	max-width: 600px;
 }
 
 /*----connexion-----*/
@@ -130,7 +162,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-	background-image: url(id.png);
+	background-image: url(ia.gif);
 }
 
 form {
@@ -164,7 +196,6 @@ input[type="submit"]:hover {
     background-color: #343a40
 }
   
-
 /*----how to pay et roadmap-----*/
 
 .body {
@@ -228,7 +259,6 @@ h1 {
 	text-align: center; /*alignement texte*/
 }
 
-  
 .events-container .event .para {
 	text-align: center;
 	color: #ffffff;
@@ -264,4 +294,25 @@ h1 {
 .vid video {
 	border-radius: 30px; 
 	margin: 30px;
+}
+
+
+/*-----token------*/
+
+.c{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    min-height: 100vh;
+    gap: 200px;
+
+}
+
+.chart{
+    width: 500px;
+	padding: 2rem;
+    border: 1px solid #f49131;
+    border-radius: 1rem;
+    background: #251c35;
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.8);
 }
